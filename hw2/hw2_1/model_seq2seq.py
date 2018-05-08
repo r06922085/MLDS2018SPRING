@@ -2,9 +2,12 @@ from utils.dataManager import DataManager
 from models.hw2_1_S2VT_attention import Seq2Seq
 import tensorflow as tf
 import numpy as np
+import sys
+
+data_dir = sys.argv[1]
 
 max_len = 40
-dataset = DataManager()
+dataset = DataManager(path = data_dir)
 dictionary = dataset.clean_train_dict
 voc_size = dictionary.voc_size
 dataset.BuildTrainableData(max_len = max_len)
