@@ -1,3 +1,8 @@
+hw3-1
+
+Command:
+Testing: bash run_gan.sh
+
 hw3-2
 
 Command:
