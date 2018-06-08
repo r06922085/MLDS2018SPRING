@@ -39,7 +39,7 @@ def main():
             if result.replace(' ','') == '':
                 result = '...'
             output_file.write("%s\n"%result)
-    while count < len(test_data):
+    while count <= len(test_data):
         count += 1
         output_file.write("...\n")
     print('Cost time: %.2f minutes'%((time.time()-start_time)/60.0))
